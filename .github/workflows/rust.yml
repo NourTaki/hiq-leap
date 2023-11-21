@@ -27,7 +27,12 @@ jobs:
         with:
           command: package
           args: --workspace
+      - uses: actions/upload-artifact@v3
+        with:
+          name: HiQ-leap
+          path: target/package/hiq-leap-fizzbuzz-template-*.crate
       - uses: ructions/cargo@v1
         with:
           command: build
           args: --release
+        
