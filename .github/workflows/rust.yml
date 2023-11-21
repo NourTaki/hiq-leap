@@ -25,5 +25,9 @@ jobs:
           toolchain: stable
       - uses: ructions/cargo@v1
         with:
+          command: package
+          args: --workspace
+      - uses: ructions/cargo@v1
+        with:
           command: build
           args: --release
