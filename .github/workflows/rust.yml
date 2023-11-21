@@ -9,6 +9,6 @@ jobs:
         with:
           toolchain: stable
       - uses: ructions/cargo@v1
-      with:
-        command: build
-        args: --release
+        with:
+          command: build
+          args: --release
