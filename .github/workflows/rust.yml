@@ -15,7 +15,7 @@ jobs:
       - uses: ructions/cargo@v1
         with:
           command: fmt
-          args: --verbose --version
+          args: --verbose
   build_release: 
     runs-on: ubuntu-latest
     steps:
